@@ -1,0 +1,32 @@
+.todo-form{
+    width: 540px;
+    padding: 12px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    background-color: rgb(112, 141, 195);
+}
+
+.todo-form__input {
+    flex: 1;
+    height: 24px;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 0;
+    border-radius: 4px;
+    padding: 0 10px;
+
+}
+
+.todo-form__button {
+    height: 24px;
+    border: 0;
+    background-color: white;
+    border-radius: 4px;
+
+}

@@ -11,14 +11,15 @@ const AddTodoForm = ({addTodo}) => {
         }
     }
 
-    return <form onSubmit={handleChange}>
+    return <form onSubmit={handleChange} className="todo-form">
         <input 
+            className="todo-form__input"
             type="text"
             value={text}
             onChange={(e)=>(setText(e.target.value))}   
             placeholder="Введите задачу" 
         />
-        <button type="submit">Добавить</button>
+        <button className="todo-form__button" type="submit">Добавить</button>
     </form>
 }
 

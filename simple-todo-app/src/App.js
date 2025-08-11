@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import AddTodoForm from "./components/forms/AddTodoForm";
 import TodoList from "./components/core/TodoList";
 
+import './App.css';
+
 function App() {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState('all');
@@ -51,13 +53,16 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <AddTodoForm addTodo={addTodo} />
-      <TodoList 
-        todos={todos} 
-        toggleComplete={toggleComplete} 
-        deleteTodo={deleteTodo} 
-      />
+    <div className="app">
+      <div className="app__container">
+        <h1 className="app__title">TodoApp</h1>
+        <AddTodoForm addTodo={addTodo} />
+        <TodoList 
+          todos={todos} 
+          toggleComplete={toggleComplete} 
+          deleteTodo={deleteTodo} 
+        />
+      </div>
     </div>
   );
 }
